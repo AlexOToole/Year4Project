@@ -23,6 +23,7 @@ public class Controller : MonoBehaviour
     public float targetTime = 10.0f;
     public Text titleText;
     public Text orderText;
+    public bool startLevel1 = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,32 +40,35 @@ public class Controller : MonoBehaviour
     void Update()
     {
         //Timer Code - stops once its less than 0;
-        if (targetTime > 0)
-        {
-            targetTime -= Time.deltaTime;
-        }
-        if (targetTime <= 0)
-        {
-            titleText.gameObject.SetActive(false);
-            orderText.text = "The correct order is \n";
-            for (int i =0; i < correctOrder.Length; i++)
+        if (startLevel1)
+        { 
+            if (targetTime > 0)
             {
-                orderText.text += correctOrder[i] + "\n";
+                targetTime -= Time.deltaTime;
             }
-            //When the input order list contains 6 entries, check the answer.
-            if (inputOrder.Count == 6)
+
+            if (targetTime <= 0)
             {
-                checkAnswer();
-            }
-            if (correct)
-            {
-                Debug.Log("Win");
+                titleText.gameObject.SetActive(false);
+                orderText.text = "The correct order is \n";
+                for (int i = 0; i < correctOrder.Length; i++)
+                {
+                    orderText.text += correctOrder[i] + "\n";
+                }
+                //When the input order list contains 6 entries, check the answer.
+                if (inputOrder.Count == 6)
+                {
+                    checkAnswer();
+                }
             }
             else
             {
-                Debug.Log("Lose");
+                //targetTime = Mathf.Round(targetTime);
+                orderText.text = targetTime.ToString();
             }
+
         }
+        
     }
 
     void checkAnswer()
@@ -76,10 +80,12 @@ public class Controller : MonoBehaviour
                 if (inputOrder[i] == correctOrder[i])
                 {
                     correct = true;
+                    orderText.text = "You win! Press the red button to restart.";
                 }
                 else
                 {
                     correct = false;
+                    orderText.text = "You lose! Press the red button to restart.";
                 }
             }
         }

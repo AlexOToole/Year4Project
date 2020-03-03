@@ -15,19 +15,24 @@ public class Cube : MonoBehaviour
     {
         gameController = GameObject.FindWithTag("GameController");
         startMaterial = gameObject.GetComponent<MeshRenderer>().material;
+        RemoveMaterial();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameController.GetComponent<Controller>().targetTime > 0.0f)
+        if (gameController.GetComponent<Controller>().startLevel1)
         {
-            gameObject.GetComponent<OVRGrabbable>().enabled = false;
-        }
-        else
-        {
-            gameObject.GetComponent<OVRGrabbable>().enabled = true;
-            RemoveMaterial();
+            if (gameController.GetComponent<Controller>().targetTime > 0.0f)
+            {
+                gameObject.GetComponent<OVRGrabbable>().enabled = false;
+                ResetMaterial();
+            }
+            else
+            {
+                gameObject.GetComponent<OVRGrabbable>().enabled = true;
+                RemoveMaterial();
+            }
         }
     }
 

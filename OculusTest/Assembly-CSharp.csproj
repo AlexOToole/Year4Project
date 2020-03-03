@@ -353,9 +353,13 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\Box.cs" />
-    <Compile Include="Assets\Scripts\ButtonTrigger.cs" />
+    <Compile Include="Assets\Scripts\ButtonTriggerRestart.cs" />
+    <Compile Include="Assets\Scripts\ButtonTriggerStartLevel1.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Cube.cs" />
+    <Compile Include="Assets\Scripts\Menu\ButtonTriggerL1.cs" />
+    <Compile Include="Assets\Scripts\Menu\ButtonTriggerL2.cs" />
+    <Compile Include="Assets\Scripts\Menu\ButtonTriggerQuit.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
