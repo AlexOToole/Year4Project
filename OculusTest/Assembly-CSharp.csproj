@@ -357,8 +357,10 @@
     <Compile Include="Assets\Scripts\ButtonTriggerStartLevel1.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Cube.cs" />
+    <Compile Include="Assets\Scripts\Level3\Baskeball.cs" />
+    <Compile Include="Assets\Scripts\Level3\Level3Controller.cs" />
     <Compile Include="Assets\Scripts\Menu\ButtonTriggerL1.cs" />
-    <Compile Include="Assets\Scripts\Menu\ButtonTriggerL2.cs" />
+    <Compile Include="Assets\Scripts\Menu\ButtonTriggerL3.cs" />
     <Compile Include="Assets\Scripts\Menu\ButtonTriggerQuit.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />

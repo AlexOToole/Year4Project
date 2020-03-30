@@ -9,6 +9,7 @@ TagManager:
   - GreenCube
   - BlueCube
   - Button
+  - Ball
   layers:
   - Default
   - TransparentFX

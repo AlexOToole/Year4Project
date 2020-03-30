@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 1
-  controlID: 143
+  controlID: 63
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 144
+  controlID: 64
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,8 +234,8 @@ MonoBehaviour:
     y: 0
     width: 966
     height: 600
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 298}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 145
+  controlID: 148
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9660ffff
-      m_LastClickedID: -40810
-      m_ExpandedIDs: c06affffc070ffff1e79fffffa7cffff7080ffff1884ffff8e87ffff388bffffa68fffff44c1ffff62c5ffff90c8ffffdcccffff56d7ffffdee0ffff84e4ffff8ee4ffff38e5ffff74e9ffff3eebffffe2eeffffeeeeffff98efffff40f3ffffaef7ffffd6fbffff843d0000003e0000043e0000243e0000823e0000fe4100007a4200009e420000fc42000088430000cc430000d2430000fc4400002845000082470000de470000004800000a4800001e48000080b60000aeb600008ebc0000babc0000e0ca00005ccb000080cb00008acb0000e8d000000ad1000014d10000
+      m_SelectedIDs: 86beffff
+      m_LastClickedID: -16762
+      m_ExpandedIDs: 78beffff86beffff9cbeffff1ae8ffff56f8ffff5ef8ffffd6fbffff443900009c390000be390000c8390000dc390000123a0000085400005c5400009c540000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.9234021, y: 2.226037, z: -0.37391365}
+    m_Target: {x: 4.95, y: 5.04, z: -1.5599997}
     speed: 2
-    m_Value: {x: 1.9234021, y: 2.226037, z: -0.37391365}
+    m_Value: {x: 4.95, y: 5.04, z: -1.5599997}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -543,13 +543,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.10410642, y: -0.75941557, z: 0.12552476, w: -0.6298361}
+    m_Target: {x: -0.11111378, y: -0.7561664, z: 0.13315882, w: -0.6309793}
     speed: 2
-    m_Value: {x: -0.10410642, y: -0.75941557, z: 0.12552476, w: -0.6298361}
+    m_Value: {x: -0.11111378, y: -0.7561664, z: 0.13315882, w: -0.6309793}
   m_Size:
-    m_Target: 5.8843737
+    m_Target: 27.482405
     speed: 2
-    m_Value: 5.8843737
+    m_Value: 27.482405
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -625,20 +625,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/SolidColours
+    - Assets/Scripts/Menu
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials/SolidColours
+  - Assets/Scripts/Menu
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\College\Oculus\OculusTest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 74370000
-    m_LastClickedID: 14196
-    m_ExpandedIDs: 00000000e42a00001e2b0000b42b0000bc2b0000062c0000262d00004a2d0000fe2d00001e2e00005e2e00003e2f00002a320000103300001a330000543300000e36000000ca9a3b
+    m_SelectedIDs: 202c0000
+    m_LastClickedID: 11296
+    m_ExpandedIDs: 00000000ec2a0000262b0000c62b0000ce2b0000182c00003a2d00005e2d0000122e0000342e0000742e0000542f0000443200002c33000036330000723300002c36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -654,7 +654,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -666,7 +666,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e42a00001e2b0000b42b0000bc2b0000062c0000262d00004a2d0000fe2d00001e2e00005e2e00003e2f00002a320000103300001a330000543300000e360000
+    m_ExpandedIDs: 00000000ec2a0000262b0000c62b0000ce2b0000182c00003a2d00005e2d0000122e0000342e0000742e0000542f0000443200002c33000036330000723300002c360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
