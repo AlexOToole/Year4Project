@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonTrigerFL : MonoBehaviour
 {
-{
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Button"))
