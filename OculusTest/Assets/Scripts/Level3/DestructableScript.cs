@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Baskeball : MonoBehaviour
+public class DestructableScript : MonoBehaviour
 {
-    GameObject gameController;
+    //GameObject gameController;
     public bool destroy = false;
     float timer = 3.0f;
     // Start is called before the first frame update
     void Start()
-    {
-        gameController = GameObject.FindWithTag("Hoop");
+    {      
     }
 
     // Update is called once per frame

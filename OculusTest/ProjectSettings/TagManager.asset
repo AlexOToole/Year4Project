@@ -10,6 +10,7 @@ TagManager:
   - BlueCube
   - Button
   - Ball
+  - Hoop
   layers:
   - Default
   - TransparentFX

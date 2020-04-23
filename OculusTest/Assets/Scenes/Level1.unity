@@ -1275,6 +1275,7 @@ MonoBehaviour:
   - {fileID: 33452408}
   - {fileID: 594162219}
   shapes: []
+  colourAt: []
   inputOrder: []
   correctOrder:
   - Red
@@ -1703,6 +1704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f3655640cf8344ba14bce344ce0031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Level: MainMenu
 --- !u!1 &853610677
 GameObject:
   m_ObjectHideFlags: 0

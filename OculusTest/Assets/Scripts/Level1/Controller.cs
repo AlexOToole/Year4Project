@@ -16,7 +16,7 @@ public class Controller : MonoBehaviour
 {
     public GameObject[] Boxs;
     public GameObject[] shapes;
-    //public string[] colourAt;
+    public List<string> colourAt;
     public List<string> inputOrder;
     public string[] correctOrder = { "Red", "Blue", "Blue", "Green", "Green", "Red" };
     bool correct = false;
@@ -24,21 +24,47 @@ public class Controller : MonoBehaviour
     public Text titleText;
     public Text orderText;
     public bool startLevel1 = false;
+    int count = 0;
     // Start is called before the first frame update
+
     void Start()
     {
-        //Colour of the shapes in order from left to right.
-        //colourAt[0] = "Red";
-        //colourAt[1] = "Green";
-        //colourAt[2] = "Green";
-        //colourAt[3] = "Blue";
-        //colourAt[4] = "Red";
-        //colourAt[5] = "Blue";
+        ////Colour of the shapes in order from left to right.
+        //colourAt.Insert(0, "Red");
+        //colourAt.Insert(1, "Green");
+        //colourAt.Insert(2, "Green");
+        //colourAt.Insert(3, "Blue");
+        //colourAt.Insert(4, "Red");
+        //colourAt.Insert(5, "Blue");
+        //for (int i = 0; i < 6; i++)
+        //{
+        //    int num = Random.Range(0, colourAt.Count);
+        //    correctOrder[i] = colourAt[num];
+        //    colourAt.Remove(colourAt[num]);
+        //}
+       // correctOrder[0] = colourAt[Random.Range(0, colourAt.Count)];
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (count == 0)
+        {
+            //Colour of the shapes in order from left to right.
+            colourAt.Insert(0, "Red");
+            colourAt.Insert(1, "Green");
+            colourAt.Insert(2, "Green");
+            colourAt.Insert(3, "Blue");
+            colourAt.Insert(4, "Red");
+            colourAt.Insert(5, "Blue");
+            for (int i = 0; i < 6; i++)
+            {
+                int num = Random.Range(0, colourAt.Count);
+                correctOrder[i] = colourAt[num];
+                colourAt.Remove(colourAt[num]);
+            }
+        }
+        count = 1;
         //Timer Code - stops once its less than 0;
         if (startLevel1)
         { 

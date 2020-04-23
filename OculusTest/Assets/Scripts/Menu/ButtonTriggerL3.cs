@@ -10,7 +10,7 @@ public class ButtonTriggerL3 : MonoBehaviour
         if (other.CompareTag("Button"))
         {
             //DO SOMETHING
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level2");
             Debug.Log("Pressed");
         }
     }

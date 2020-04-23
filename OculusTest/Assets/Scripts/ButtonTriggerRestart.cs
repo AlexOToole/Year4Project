@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonTriggerRestart : MonoBehaviour
 {
     GameObject gameController;
+    public string Level;
     private void Start()
     {
         gameController = GameObject.FindWithTag("GameController");
@@ -16,7 +17,7 @@ public class ButtonTriggerRestart : MonoBehaviour
         if (other.CompareTag("Button"))
         {
             //DO SOMETHING
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene(Level);
             Debug.Log("Pressed");
         }
     }
