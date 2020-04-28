@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/Alex O'Toole/Desktop/Year4Project/OculusTest/Builds/DemoBuild/FYP.exe
+C:/Users/Alex O'Toole/Desktop/DEMO/Year4Project/OculusTest/Builds/DemoBuild/FYP.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Level1.unity

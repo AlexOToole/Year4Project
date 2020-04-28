@@ -48,7 +48,7 @@ public class Level3Controller : MonoBehaviour
                 if (targetTime > 0)
                 {
                     basketsMade++;
-                    Instantiate(ball, new Vector3(-0.288f, 0.95f, 0), Quaternion.identity);
+                    //Instantiate(ball, new Vector3(-0.288f, 0.95f, 0), Quaternion.identity);
                     //Might not need this due to the level floor collider script.
                     temp = collision.gameObject;
                     temp.GetComponent<Baskeball>().destroy = true;
