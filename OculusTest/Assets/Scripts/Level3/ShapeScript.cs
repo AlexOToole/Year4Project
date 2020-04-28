@@ -23,6 +23,7 @@ public class ShapeScript : MonoBehaviour
         gameObject.GetComponent<MeshRenderer>().material = possibleColours[num];
         shape = gameObject.name;
         color = possibleColours[num].name;
+        //This loop places the shapes in at one of the spawn points then deactivates it so that no objects can be in the same spot.
         while (search)
         {
             point = Random.Range(0, spawnPoints.Length);
