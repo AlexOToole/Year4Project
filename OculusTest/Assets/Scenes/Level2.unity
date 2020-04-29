@@ -767,11 +767,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'When the level starts, you will be shown an object to find, after 3 seconds
-    the name will dissapear and you will have to remember the order as you search
-    for the item and return it to this table.
-
-    Press Green button to start.'
+  m_Text: "When the level starts, you will be shown a list of objects to find, after
+    10 seconds the list will dissapear and you will have to remember the order as
+    you search for the items and return it to the box on this table.\r\nPress Green
+    button to start."
 --- !u!222 &250817315
 CanvasRenderer:
   m_ObjectHideFlags: 0
