@@ -65,7 +65,7 @@ public class Controller : MonoBehaviour
             }
         }
         count = 1;
-        //Timer Code - stops once its less than 0;
+        //Timer Code, stops once its less than 0;
         if (startLevel1)
         { 
             if (targetTime > 0)
@@ -97,6 +97,8 @@ public class Controller : MonoBehaviour
         
     }
 
+    //This function compares the input order list to the correct order
+    //using a for loop, if a cell doesnt match a corresponding cell it breaks out of the for loop.
     void checkAnswer()
     {
         if (inputOrder.Count == 6)
@@ -106,12 +108,13 @@ public class Controller : MonoBehaviour
                 if (inputOrder[i] == correctOrder[i])
                 {
                     correct = true;
-                    orderText.text = "You win! Press the red button to restart.";
+                    orderText.text = "Correct! \n Press the red button to Return to MainMenu.";
                 }
                 else
                 {
                     correct = false;
-                    orderText.text = "You lose! Press the red button to restart.";
+                    orderText.text = "Wrong! \n Press the red button to Return to MainMenu.";
+                    break;
                 }
             }
         }

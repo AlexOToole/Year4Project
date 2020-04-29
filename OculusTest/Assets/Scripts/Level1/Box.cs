@@ -20,7 +20,7 @@ public class Box : MonoBehaviour
     }
 
     //Function that adds the cube that enters the box to the list of cubes in the box.
-    //Currently cannot change your mind(Once cube is in a box it must stay.
+    //Currently cannot change your mind(Once cube is in a box it must stay).
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == collision.gameObject.GetComponent<Cube>().color + "Cube")

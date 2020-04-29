@@ -10,12 +10,27 @@ public class Cube : MonoBehaviour
     Material startMaterial;
     public bool inBox = false;
     public int index = -1;
+    public GameObject[] spawnPoints;
+    bool search = true;
+    int point;
     // Start is called before the first frame update
     void Start()
     {
         gameController = GameObject.FindWithTag("GameController");
         startMaterial = gameObject.GetComponent<MeshRenderer>().material;
         RemoveMaterial();
+        //Loop that randomly places the cubes on the desk so that they are not 
+        //in the same order every time.
+        while (search)
+        {
+            point = Random.Range(0, spawnPoints.Length);
+            if (spawnPoints[point].activeSelf)
+            {
+                gameObject.GetComponent<Transform>().position = spawnPoints[point].GetComponent<Transform>().position;
+                spawnPoints[point].SetActive(false);
+                search = false;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -32,6 +47,12 @@ public class Cube : MonoBehaviour
             {
                 gameObject.GetComponent<OVRGrabbable>().enabled = true;
                 RemoveMaterial();
+            }
+
+            //Adds the colours back once all the boxes are full.
+            if (gameController.GetComponent<Controller>().inputOrder.Count >= 6)
+            {
+                ResetMaterial();
             }
         }
     }
