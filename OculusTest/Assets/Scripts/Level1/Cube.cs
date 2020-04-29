@@ -69,18 +69,18 @@ public class Cube : MonoBehaviour
         gameObject.GetComponent<MeshRenderer>().material = startMaterial;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "CustomHandLeft" || collision.gameObject.name == "CustomHandRight")
-        {
-            //check to see if list isnt empty
-            if (gameController.GetComponent<Controller>().inputOrder.Count > 0)
-            {
-                if (index > -1)
-                {
-                    gameController.GetComponent<Controller>().inputOrder.RemoveAt(index);
-                }
-            }
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.name == "CustomHandLeft" || collision.gameObject.name == "CustomHandRight")
+    //    {
+    //        //check to see if list isnt empty
+    //        if (gameController.GetComponent<Controller>().inputOrder.Count > 0)
+    //        {
+    //            if (index > -1)
+    //            {
+    //                gameController.GetComponent<Controller>().inputOrder.RemoveAt(index);
+    //            }
+    //        }
+    //    }
+    //}
 }
